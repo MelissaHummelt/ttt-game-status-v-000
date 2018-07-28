@@ -62,11 +62,12 @@ def over?(board)
 end
 
 def winner(board)
-  winning_char = nil
-  if !won?(board)
+  winning_combo = won?(board)
+  if winning_combo.class != array
     return nil
   else
-    winning_char = combo[won?(board)[0])
+    winning_index = winning_combo[0]
+    winning_token = board[winning_index]
   end
-  return winning_char
+  
 end
