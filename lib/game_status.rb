@@ -20,11 +20,11 @@ def won?(board)
     first_position  = combo[0]
     second_position = combo[1]
     third_position  = combo[2]
-    
+
     first = board[first_position]
     second = board[second_position]
     third = board[third_position]
-    
+
     if first == "X" && second == "X" && third == "X"
       true
     elsif first == "O" && second == "O" && third == "O"
