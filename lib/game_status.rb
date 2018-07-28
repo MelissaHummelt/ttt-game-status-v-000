@@ -69,5 +69,5 @@ def winner(board)
     winning_index = winning_combo[0]
     winning_token = board[winning_index]
   end
-  
+
 end
