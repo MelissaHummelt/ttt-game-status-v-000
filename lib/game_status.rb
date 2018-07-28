@@ -66,7 +66,7 @@ def winner(board)
   if !won?(board)
     return nil
   else
-    winning_char = board[won?(board)[0])
+    winning_char = combo[won?(board)[0])
   end
   return winning_char
 end
